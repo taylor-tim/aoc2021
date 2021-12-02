@@ -1,0 +1,17 @@
+*.pdb
+*.json
+*.cache
+*.props
+*.user
+*.idea
+*.dll
+*.exe
+*.editorconfig
+*.xml
+*AssemblyInfo.cs
+*.targets
+*.sln
+*FileListAbsolute.txt
+*AssemblyAttributes.cs
+*CopyComplete
+*.info
