@@ -6,9 +6,9 @@ namespace Aoc2021
     public abstract class SolverBase
     {
         
-        private bool enablePartOneTest = true;
-        private bool enablePartOne = true;
-        private bool enablePartTwoTest = true;
+        private bool enablePartOneTest = false;
+        private bool enablePartOne = false;
+        private bool enablePartTwoTest = false;
         private bool enablePartTwo = true;
 
         private enum parts

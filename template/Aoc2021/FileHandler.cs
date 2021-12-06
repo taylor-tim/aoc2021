@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Aoc2021
 {
@@ -20,7 +22,7 @@ namespace Aoc2021
             return ReadFromFile(TestPuzzleData);
         }
 
-        private static IEnumerable<string> ReadFromFile(string path)
+        private static List<string> ReadFromFile(string path)
         {
             IEnumerable<string> outputData;
             try
@@ -32,7 +34,7 @@ namespace Aoc2021
                 Console.WriteLine($"No file found at {path}, returning empty.");
                 outputData = new List<string>();
             }
-            return outputData;
+            return outputData.ToList();
         }
     }
 }
