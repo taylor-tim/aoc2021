@@ -5,11 +5,10 @@ namespace Aoc2021
 {
     public abstract class SolverBase
     {
-        
-        private bool enablePartOneTest = false;
-        private bool enablePartOne = false;
-        private bool enablePartTwoTest = false;
-        private bool enablePartTwo = true;
+        abstract public bool enablePartOneTest { get; }
+        abstract public bool enablePartOne { get; }
+        abstract public bool enablePartTwoTest { get; }
+        abstract public bool enablePartTwo { get; }
 
         private enum parts
         {
