@@ -5,11 +5,10 @@ namespace testit
 {
     public class SolveTest : SolverBase
     {
-        private bool enablePartOneTest = true;
-        private bool enablePartOne = false;
-        private bool enablePartTwoTest = false;
-        private bool enablePartTwo = false;
-
+        public override bool enablePartOneTest { get { return false; } }
+        public override bool enablePartOne { get { return false; } }
+        public override bool enablePartTwoTest { get { return true; } }
+        public override bool enablePartTwo { get { return true; } }
         protected override string PartOne(IEnumerable<string> inputData)
         {
             return "hi";

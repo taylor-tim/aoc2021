@@ -30,7 +30,7 @@ namespace Aoc06
             var parsed = inputData.ToList()[0].Split(",");
             List<int> fish = parsed.Select(x => Int32.Parse(x)).ToList();
             var newFishCounter = new List<long>();
-            for(var i = 0; i < 9; i++) {newFishCounter.Add(0);}
+            newFishCounter.AddRange(Enumerable.Repeat(0L, 9));
 
             foreach (var fishy in fish)
             {
@@ -50,7 +50,7 @@ namespace Aoc06
         private List<long> PartTwoIterate(List<long> fish)
         {
             var result = new List<long>();
-            for(var i = 0; i < 9; i++) {result.Add(0);}
+            result.AddRange(Enumerable.Repeat(0L, 9));
             
             for(var i = 0; i < 9; i++)
             {
